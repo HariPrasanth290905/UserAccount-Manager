@@ -1,0 +1,81 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    color: #263238;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 24px;
+    color: #00695c;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Table container animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    animation: fadeIn 0.6s ease-in;
+}
+
+/* Header styling */
+th {
+    background: linear-gradient(90deg, #009688, #26a69a);
+    color: #ffffff;
+    padding: 14px 18px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+/* Row styling */
+td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #eeeeee;
+    color: #37474f;
+}
+
+/* Alternate row background */
+tr:nth-child(even) {
+    background-color: #f1f8f9;
+}
+
+/* Hover effect */
+tr:hover {
+    background-color: #b2dfdb;
+    transition: background-color 0.25s ease-in-out;
+}
+/* Define the fade-in and fade-out animations */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Apply the animation to the success message */
+#successMessage {
+    animation: fadeInOut 2s ease-in-out forwards;
+}
