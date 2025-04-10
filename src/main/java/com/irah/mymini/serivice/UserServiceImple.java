@@ -18,8 +18,10 @@ public class UserServiceImple implements UserService {
     @Override
     public String createOrUpdateUser(Users user) {
        repo.save(user);
-       if(user.getId()==null)
+       if(user.getId()==null) {
+           user.setActive("Y");
            return "User created";
+       }
        else
            return "User updated";
     }

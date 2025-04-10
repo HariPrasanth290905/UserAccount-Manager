@@ -17,10 +17,12 @@ public class Users {
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @UpdateTimestamp
+    @Column(insertable = false)
     private LocalDate updated;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @CreationTimestamp
+    @Column(updatable = false)
     private LocalDate created;
 
     private String active = "Y";

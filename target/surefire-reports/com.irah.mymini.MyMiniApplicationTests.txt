@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.irah.mymini.MyMiniApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.745 s -- in com.irah.mymini.MyMiniApplicationTests
